@@ -1,15 +1,32 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>My honest reaction</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+    <title>My Honest Reaction</title>
+    <style>
+        .title-style {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 2rem 0;
+        }
+    </style>
 </head>
 <body>
-<h1>
-    A friend of mine told me a(<a href="/bromaGeneral" > General | </a> <a href="/bromaKnock" > Knock Knock  |</a>
-    <a href="/bromaProgramming" > Programming  |</a> <a href="/bromaDad" > Dad</a>) joke.
-</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-auto title-style">
+            A friend of mine told me a
+            (<a href="/bromaGeneral">General</a> |
+            <a href="/bromaKnock">Knock Knock</a> |
+            <a href="/bromaProgram">Programming</a> |
+            <a href="/bromaDad">Dad</a>) joke.
+        </div>
+    </div>
+</div>
 
-
+<script th:src="@{webjars/bootstrap/5.3.3/js/bootstrap.min.js}"></script>
+<script th:src="@{webjars/popper.js/2.11.8/umd/popper.min.js}"></script>
 </body>
 </html>
